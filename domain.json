@@ -58,7 +58,199 @@
         "store.akamai.steamstatic.com",
         "steamcdn-a.akamaihd.net"
     ],
-    "TMDB": ["www.themoviedb.org", "api.themoviedb.org", "image.tmdb.org", "api.tmdb.org"],
-    "Google_Translate": ["translate.googleapis.com", "translate.google.com"],
-    "wallhaven": ["wallhaven.cc", "th.wallhaven.cc"]
+    "TMDB": [
+        "www.themoviedb.org",
+        "api.themoviedb.org",
+        "image.tmdb.org",
+        "api.tmdb.org"
+    ],
+    "Google_Translate": [
+        "translate.googleapis.com",
+        "translate.google.com"
+    ],
+    "wallhaven": [
+        "wallhaven.cc",
+        "th.wallhaven.cc"
+    ],
+    "529065": [
+        "529065.xyz",
+        "529066.xyz"
+    ],
+    "acgrip": [
+        "acg.rip"
+    ],
+    "animetosho": [
+        "animetosho.org"
+    ],
+    "anirena": [
+        "anirena.com"
+    ],
+    "asnet": [
+        "asnet.pw"
+    ],
+    "bangumi": [
+        "bangumi.moe"
+    ],
+    "bangumi": [
+        "bitsearch.to",
+        "solidtorrents.to"
+    ],
+    "dmhy": [
+        "share.dmhy.org",
+        "dmhy.org"
+    ],
+    "yts": [
+        "yts.mx",
+        "yts.unblockninja.com",
+        "yts.ninjaproxy1.com",
+        "yts.proxyninja.org",
+        "yts.proxyninja.net",
+        "yts.torrentbay.st",
+        "yts.torrentsbay.org"
+    ],
+    "uindex": [
+        "uindex.org"
+    ],
+    "u3c3": [
+        "u3c3.com",
+        "u001.25img.com",
+        "u002.25img.com",
+        "u003.25img.com",
+        "m0m0m1m.mnmnmnmnmn.com"
+    ],
+    "torrentgalaxy": [
+        "torrentgalaxy.one",
+        "torrentgalaxy.info",
+        "torrentgalaxy.space"
+    ],
+    "torrentdownload": [
+        "torrentdownload.info"
+    ],
+    "torrentcore": [
+        "torrentcore.xyz"
+    ],
+    "torrentdownloads": [
+        "torrentdownloads.pro",
+        "torrentdownloads.unblockninja.com",
+        "torrentdownloads.ninjaproxy1.com",
+        "torrentdownloads.proxyninja.org",
+        "torrentdownloads.proxyninja.net"
+    ],
+    "tokyotosho": [
+        "tokyotosho.info"
+    ],
+    "therarbg": [
+        "therarbg.to",
+        "therarbg.com",
+        "therar.site",
+        "rarbg.unblockninja.com",
+        "rarbg.ninjaproxy1.com",
+        "rarbg.proxyninja.org",
+        "rarbg.proxyninja.net",
+        "rarbg.torrentbay.st",
+        "rarbg.torrentsbay.org"
+    ],
+    "subsplease": [
+        "subsplease.org"
+    ],
+    "showrss": [
+        "showrss.info"
+    ],
+    "shanaproject": [
+        "shanaproject.com"
+    ],
+    "nyaa": [
+        "nyaa.si",
+        "nyaa.iss.ink",
+        "nyaa.land",
+        "nyaa.unblockninja.com"
+    ],
+    "mikanani": [
+        "mikanani.me"
+    ],
+    "magnetcatcat": [
+        "magnetcatcat.com",
+        "clmclm.com",
+        "www.8800492.xyz",
+        "www.8800493.xyz",
+        "www.8800494.xyz",
+        "www.8800490.xyz"
+    ],
+    "kickass": [
+        "kickass.ws",
+        "kickasstorrents.bz",
+        "kkickass.com",
+        "kkat.net",
+        "kick4ss.com",
+        "kickasst.net",
+        "kickasstorrents.id",
+        "thekat.cc",
+        "kickasshydra.dev"
+    ],
+    "kickass.torrentbay": [
+        "kickass.torrentbay.st",
+        "kickass.torrentsbay.org",
+        "kickasstorrents.unblockninja.com",
+        "kickasstorrents.ninjaproxy1.com",
+        "kickasstorrents.proxyninja.org",
+        "kickasstorrents.proxyninja.net"
+    ],
+    "isohunt": [
+        "isohunt.ch"
+    ],
+    "archive": [
+        "archive.org"
+    ],
+    "eztvx": [
+        "eztvx.to",
+        "eztv.wf",
+        "eztv.tf",
+        "eztv.yt",
+        "eztv1.xyz"
+    ],
+    "extratorrent": [
+        "extratorrent.st",
+        "extratorrent.ninjaproxy1.com",
+        "extratorrent.proxyninja.org",
+        "extratorrent.proxyninja.net"
+    ],
+    "ext": [
+        "ext.to",
+        "search.extto.com",
+        "extranet.torrentbay.st"
+    ],
+    "e-hentai": [
+        "e-hentai.org"
+    ],
+    "imbt": [
+        "imbt.one"
+    ],
+    "thepiratebay": [
+        "thepiratebay.org",
+        "thepiratebay.unblockninja.com",
+        "thepiratebay.ninjaproxy1.com",
+        "tpb.proxyninja.org",
+        "thepiratebay.proxyninja.net",
+        "thepiratebay.torrentbay.st",
+        "tpb.skynetcloud.site",
+        "piratehaven.xyz",
+        "mirrorbay.top",
+        "thepiratebay0.org",
+        "thepiratebay10.xyz",
+        "pirateproxylive.org",
+        "thehiddenbay.com",
+        "thepiratebay.zone",
+        "tpb.party",
+        "piratebayproxy.live",
+        "piratebay.live",
+        "piratebay.party",
+        "thepiratebay.party",
+        "thepiratebaye.org",
+        "thepiratebay.cloud",
+        "tpb-proxy.xyz",
+        "tpb.re",
+        "tpirbay.site",
+        "tpirbay.top",
+        "tpirbay.xyz"
+    ]
 }
