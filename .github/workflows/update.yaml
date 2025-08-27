@@ -2,7 +2,7 @@ name: Update Hosts
 
 on:
   schedule:
-    - cron: "52 23 * * *"
+    - cron: "0 16 * * *"
 
 jobs:
   build:
