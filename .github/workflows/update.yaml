@@ -3,6 +3,7 @@ name: Update Hosts
 on:
   schedule:
     - cron: "0 16 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
