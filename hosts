@@ -1,83 +1,83 @@
 # GitHub Hosts Start
-185.199.108.153		github.io
+185.199.109.153		github.io
 52.224.38.193		github.dev
 192.0.66.2		github.blog
 140.82.113.17		github.community
 185.199.108.153		githubstatus.com
 140.82.112.4		github.com
-140.82.114.25		alive.github.com
-140.82.113.6		api.github.com
+140.82.113.26		alive.github.com
+140.82.112.6		api.github.com
 #		assets-cdn.github.com
-140.82.113.21		central.github.com
-140.82.112.10		codeload.github.com
+140.82.114.22		central.github.com
+140.82.114.9		codeload.github.com
 140.82.114.21		collector.github.com
-140.82.114.4		gist.github.com
-140.82.113.25		live.github.com
-185.199.111.154		github.githubassets.com
-185.199.108.133		avatars.githubusercontent.com
-185.199.108.133		avatars0.githubusercontent.com
+140.82.113.4		gist.github.com
+140.82.113.26		live.github.com
+185.199.109.154		github.githubassets.com
+185.199.109.133		avatars.githubusercontent.com
+185.199.109.133		avatars0.githubusercontent.com
 185.199.108.133		avatars1.githubusercontent.com
-185.199.108.133		avatars2.githubusercontent.com
+185.199.110.133		avatars2.githubusercontent.com
 185.199.108.133		avatars3.githubusercontent.com
 185.199.108.133		avatars4.githubusercontent.com
 185.199.108.133		avatars5.githubusercontent.com
-185.199.109.133		camo.githubusercontent.com
+185.199.108.133		camo.githubusercontent.com
 185.199.108.133		cloud.githubusercontent.com
-4.249.131.160		copilot-proxy.githubusercontent.com
-185.199.109.133		desktop.githubusercontent.com
-185.199.109.133		favicons.githubusercontent.com
-185.199.109.133		raw.githubusercontent.com
-185.199.108.133		media.githubusercontent.com
+20.85.130.105		copilot-proxy.githubusercontent.com
+185.199.108.133		desktop.githubusercontent.com
+185.199.108.133		favicons.githubusercontent.com
+185.199.110.133		raw.githubusercontent.com
+185.199.111.133		media.githubusercontent.com
 185.199.110.133		objects.githubusercontent.com
-185.199.111.133		user-images.githubusercontent.com
+185.199.108.133		user-images.githubusercontent.com
 13.107.42.16		pipelines.actions.githubusercontent.com
-3.5.25.218		github-cloud.s3.amazonaws.com
-52.216.250.20		github-com.s3.amazonaws.com
-52.216.208.9		github-production-release-asset-2e65be.s3.amazonaws.com
-52.216.29.92		github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.217.83.20		github-production-user-asset-6210df.s3.amazonaws.com
+52.217.33.252		github-cloud.s3.amazonaws.com
+52.217.227.153		github-com.s3.amazonaws.com
+3.5.28.97		github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.173.225		github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.177.253		github-production-user-asset-6210df.s3.amazonaws.com
 185.199.108.133		github.map.fastly.net
-146.75.77.194		github.global.ssl.fastly.net
-13.107.253.38		vscode.dev
+146.75.29.194		github.global.ssl.fastly.net
+40.90.70.52		vscode.dev
 # GitHub Hosts End
 
 # Steam Hosts Start
-23.2.133.147		steam-chat.com
-23.11.10.111		steamcommunity.com
-23.2.133.147		www.steamcommunity.com
-23.11.10.111		api.steampowered.com
-23.11.10.111		help.steampowered.com
-23.197.193.185		store.steampowered.com
-23.55.236.137		media.steampowered.com
-23.11.10.111		login.steampowered.com
-23.197.193.185		checkout.steampowered.com
-146.75.79.52		community.steamstatic.com
-23.193.200.209		avatars.akamai.steamstatic.com
-23.193.200.199		cdn.akamai.steamstatic.com
-23.55.236.143		community.akamai.steamstatic.com
-23.193.200.217		store.akamai.steamstatic.com
-23.204.152.169		steamcdn-a.akamaihd.net
+23.213.69.74		steam-chat.com
+23.214.233.226		steamcommunity.com
+23.213.69.74		www.steamcommunity.com
+23.214.233.226		api.steampowered.com
+23.1.47.193		help.steampowered.com
+23.48.9.171		store.steampowered.com
+23.218.218.188		media.steampowered.com
+23.214.233.226		login.steampowered.com
+23.48.9.171		checkout.steampowered.com
+146.75.31.52		community.steamstatic.com
+23.218.218.185		avatars.akamai.steamstatic.com
+23.221.227.165		cdn.akamai.steamstatic.com
+23.45.180.217		community.akamai.steamstatic.com
+23.45.180.232		store.akamai.steamstatic.com
+23.215.0.133		steamcdn-a.akamaihd.net
 # Steam Hosts End
 
 # TMDB Hosts Start
-108.159.227.111		www.themoviedb.org
-18.161.156.92		api.themoviedb.org
-185.93.1.250		image.tmdb.org
-108.159.227.106		api.tmdb.org
+3.171.38.80		www.themoviedb.org
+52.85.151.28		api.themoviedb.org
+3.171.61.127		image.tmdb.org
+3.167.112.56		api.tmdb.org
 # TMDB Hosts End
 
 # Google_Translate Hosts Start
-173.194.195.95		translate.googleapis.com
-74.125.201.139		translate.google.com
+172.253.62.95		translate.googleapis.com
+172.253.122.113		translate.google.com
 # Google_Translate Hosts End
 
 # wallhaven Hosts Start
-172.67.74.111		wallhaven.cc
-104.26.11.35		th.wallhaven.cc
+104.26.10.35		wallhaven.cc
+172.67.74.111		th.wallhaven.cc
 # wallhaven Hosts End
 
 # 529065 Hosts Start
-104.21.89.199		529065.xyz
+172.67.164.148		529065.xyz
 172.67.191.141		529066.xyz
 # 529065 Hosts End
 
@@ -98,35 +98,35 @@
 # asnet Hosts End
 
 # bangumi Hosts Start
-104.21.112.1		bitsearch.to
-104.21.26.205		solidtorrents.to
+104.21.48.1		bitsearch.to
+172.67.168.137		solidtorrents.to
 # bangumi Hosts End
 
 # dmhy Hosts Start
 172.67.98.15		share.dmhy.org
-104.25.62.106		dmhy.org
+172.67.98.15		dmhy.org
 # dmhy Hosts End
 
 # yts Hosts Start
-104.26.0.60		yts.mx
-104.21.60.66		yts.unblockninja.com
-104.21.81.135		yts.ninjaproxy1.com
+104.26.1.60		yts.mx
+172.67.193.23		yts.unblockninja.com
+172.67.189.155		yts.ninjaproxy1.com
 172.67.211.246		yts.proxyninja.org
 172.67.146.131		yts.proxyninja.net
 172.67.223.159		yts.torrentbay.st
-104.21.64.1		yts.torrentsbay.org
+104.21.112.1		yts.torrentsbay.org
 # yts Hosts End
 
 # uindex Hosts Start
-172.67.132.131		uindex.org
+104.21.4.215		uindex.org
 # uindex Hosts End
 
 # u3c3 Hosts Start
 172.67.160.78		u3c3.com
-104.21.48.1		u001.25img.com
-104.21.48.1		u002.25img.com
-104.21.16.1		u003.25img.com
-104.21.48.1		m0m0m1m.mnmnmnmnmn.com
+104.21.64.1		u001.25img.com
+104.21.16.1		u002.25img.com
+104.21.48.1		u003.25img.com
+104.21.16.1		m0m0m1m.mnmnmnmnmn.com
 # u3c3 Hosts End
 
 # torrentgalaxy Hosts Start
@@ -136,7 +136,7 @@
 # torrentgalaxy Hosts End
 
 # torrentdownload Hosts Start
-172.67.142.65		torrentdownload.info
+104.21.27.103		torrentdownload.info
 # torrentdownload Hosts End
 
 # torrentcore Hosts Start
@@ -144,26 +144,26 @@
 # torrentcore Hosts End
 
 # torrentdownloads Hosts Start
-104.26.13.134		torrentdownloads.pro
+172.67.70.47		torrentdownloads.pro
 104.21.60.66		torrentdownloads.unblockninja.com
 172.67.189.155		torrentdownloads.ninjaproxy1.com
-104.21.67.39		torrentdownloads.proxyninja.org
+172.67.211.246		torrentdownloads.proxyninja.org
 104.21.41.103		torrentdownloads.proxyninja.net
 # torrentdownloads Hosts End
 
 # tokyotosho Hosts Start
-104.21.93.187		tokyotosho.info
+172.67.214.1		tokyotosho.info
 # tokyotosho Hosts End
 
 # therarbg Hosts Start
 104.21.37.213		therarbg.to
-172.67.185.4		therarbg.com
+172.64.80.1		therarbg.com
 104.21.96.1		therar.site
 172.67.193.23		rarbg.unblockninja.com
-104.21.81.135		rarbg.ninjaproxy1.com
-172.67.211.246		rarbg.proxyninja.org
-104.21.41.103		rarbg.proxyninja.net
-172.67.223.159		rarbg.torrentbay.st
+172.67.189.155		rarbg.ninjaproxy1.com
+104.21.67.39		rarbg.proxyninja.org
+172.67.146.131		rarbg.proxyninja.net
+104.21.46.45		rarbg.torrentbay.st
 104.21.48.1		rarbg.torrentsbay.org
 # therarbg Hosts End
 
@@ -172,30 +172,30 @@
 # subsplease Hosts End
 
 # showrss Hosts Start
-104.21.48.1		showrss.info
+104.21.96.1		showrss.info
 # showrss Hosts End
 
 # shanaproject Hosts Start
-104.21.48.126		shanaproject.com
+172.67.151.152		shanaproject.com
 # shanaproject Hosts End
 
 # nyaa Hosts Start
 186.2.163.20		nyaa.si
-172.67.158.232		nyaa.iss.ink
+104.21.89.116		nyaa.iss.ink
 104.21.82.183		nyaa.land
 172.67.193.23		nyaa.unblockninja.com
 # nyaa Hosts End
 
 # mikanani Hosts Start
-104.21.17.69		mikanani.me
+172.67.223.55		mikanani.me
 # mikanani Hosts End
 
 # magnetcatcat Hosts Start
 104.21.9.213		magnetcatcat.com
-104.21.25.234		clmclm.com
-172.67.153.39		www.8800492.xyz
+172.67.134.226		clmclm.com
+104.21.32.172		www.8800492.xyz
 172.67.161.118		www.8800493.xyz
-104.21.80.1		www.8800494.xyz
+104.21.112.1		www.8800494.xyz
 172.67.141.149		www.8800490.xyz
 # magnetcatcat Hosts End
 
@@ -212,11 +212,11 @@
 # kickass Hosts End
 
 # kickass.torrentbay Hosts Start
-172.67.223.159		kickass.torrentbay.st
-104.21.80.1		kickass.torrentsbay.org
+104.21.46.45		kickass.torrentbay.st
+104.21.32.1		kickass.torrentsbay.org
 172.67.193.23		kickasstorrents.unblockninja.com
 172.67.189.155		kickasstorrents.ninjaproxy1.com
-104.21.67.39		kickasstorrents.proxyninja.org
+172.67.211.246		kickasstorrents.proxyninja.org
 104.21.41.103		kickasstorrents.proxyninja.net
 # kickass.torrentbay Hosts End
 
@@ -230,27 +230,27 @@
 
 # eztvx Hosts Start
 104.21.68.109		eztvx.to
-104.21.50.16		eztv.wf
-104.21.37.30		eztv.tf
+172.67.199.60		eztv.wf
+172.67.203.108		eztv.tf
 104.21.43.109		eztv.yt
 172.67.134.123		eztv1.xyz
 # eztvx Hosts End
 
 # extratorrent Hosts Start
 172.67.197.8		extratorrent.st
-172.64.80.1		extratorrent.ninjaproxy1.com
+104.21.81.135		extratorrent.ninjaproxy1.com
 172.67.211.246		extratorrent.proxyninja.org
-104.21.41.103		extratorrent.proxyninja.net
+172.64.80.1		extratorrent.proxyninja.net
 # extratorrent Hosts End
 
 # ext Hosts Start
-104.21.82.15		ext.to
+172.67.193.81		ext.to
 172.67.160.110		search.extto.com
-104.21.46.45		extranet.torrentbay.st
+172.67.223.159		extranet.torrentbay.st
 # ext Hosts End
 
 # e-hentai Hosts Start
-172.66.140.62		e-hentai.org
+172.66.132.196		e-hentai.org
 # e-hentai Hosts End
 
 # imbt Hosts Start
@@ -258,33 +258,33 @@
 # imbt Hosts End
 
 # thepiratebay Hosts Start
-162.159.136.6		thepiratebay.org
+162.159.137.6		thepiratebay.org
 104.21.60.66		thepiratebay.unblockninja.com
-104.21.81.135		thepiratebay.ninjaproxy1.com
+172.67.189.155		thepiratebay.ninjaproxy1.com
 172.67.211.246		tpb.proxyninja.org
-104.21.41.103		thepiratebay.proxyninja.net
-172.67.223.159		thepiratebay.torrentbay.st
-172.67.166.99		tpb.skynetcloud.site
+172.67.146.131		thepiratebay.proxyninja.net
+104.21.46.45		thepiratebay.torrentbay.st
+104.21.11.157		tpb.skynetcloud.site
 104.21.80.1		piratehaven.xyz
 104.21.76.171		mirrorbay.top
-104.21.96.1		thepiratebay0.org
-104.21.72.125		thepiratebay10.xyz
+104.21.32.1		thepiratebay0.org
+172.67.184.161		thepiratebay10.xyz
 104.21.86.228		pirateproxylive.org
 172.67.181.113		thehiddenbay.com
 104.21.94.199		thepiratebay.zone
 104.21.6.24		tpb.party
-104.21.48.1		piratebayproxy.live
-104.21.66.137		piratebay.live
-172.67.160.7		piratebay.party
-172.67.137.66		thepiratebay.party
-104.21.80.1		thepiratebaye.org
+104.21.64.1		piratebayproxy.live
+172.67.160.103		piratebay.live
+172.64.80.1		piratebay.party
+104.21.86.223		thepiratebay.party
+104.21.96.1		thepiratebaye.org
 104.21.4.116		thepiratebay.cloud
-104.21.56.125		tpb-proxy.xyz
-172.67.172.1		tpb.re
-8.218.208.240		tpirbay.site
-47.91.170.222		tpirbay.top
+172.67.151.43		tpb-proxy.xyz
+104.21.79.237		tpb.re
+47.76.127.217		tpirbay.site
+8.218.208.240		tpirbay.top
 8.218.208.240		tpirbay.xyz
 # thepiratebay Hosts End
 
-# Update Time: 2025-08-28 00:24:01 (UTC+8) 
+# Update Time: 2025-08-29 00:21:28 (UTC+8) 
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts

@@ -1,30 +1,30 @@
 # thepiratebay Hosts Start
-162.159.136.6		thepiratebay.org
+162.159.137.6		thepiratebay.org
 104.21.60.66		thepiratebay.unblockninja.com
-104.21.81.135		thepiratebay.ninjaproxy1.com
+172.67.189.155		thepiratebay.ninjaproxy1.com
 172.67.211.246		tpb.proxyninja.org
-104.21.41.103		thepiratebay.proxyninja.net
-172.67.223.159		thepiratebay.torrentbay.st
-172.67.166.99		tpb.skynetcloud.site
+172.67.146.131		thepiratebay.proxyninja.net
+104.21.46.45		thepiratebay.torrentbay.st
+104.21.11.157		tpb.skynetcloud.site
 104.21.80.1		piratehaven.xyz
 104.21.76.171		mirrorbay.top
-104.21.96.1		thepiratebay0.org
-104.21.72.125		thepiratebay10.xyz
+104.21.32.1		thepiratebay0.org
+172.67.184.161		thepiratebay10.xyz
 104.21.86.228		pirateproxylive.org
 172.67.181.113		thehiddenbay.com
 104.21.94.199		thepiratebay.zone
 104.21.6.24		tpb.party
-104.21.48.1		piratebayproxy.live
-104.21.66.137		piratebay.live
-172.67.160.7		piratebay.party
-172.67.137.66		thepiratebay.party
-104.21.80.1		thepiratebaye.org
+104.21.64.1		piratebayproxy.live
+172.67.160.103		piratebay.live
+172.64.80.1		piratebay.party
+104.21.86.223		thepiratebay.party
+104.21.96.1		thepiratebaye.org
 104.21.4.116		thepiratebay.cloud
-104.21.56.125		tpb-proxy.xyz
-172.67.172.1		tpb.re
-8.218.208.240		tpirbay.site
-47.91.170.222		tpirbay.top
+172.67.151.43		tpb-proxy.xyz
+104.21.79.237		tpb.re
+47.76.127.217		tpirbay.site
+8.218.208.240		tpirbay.top
 8.218.208.240		tpirbay.xyz
-# Update Time: 2025-08-28 00:24:01 (UTC+8) 
+# Update Time: 2025-08-29 00:21:28 (UTC+8) 
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_thepiratebay
 # thepiratebay Hosts End
