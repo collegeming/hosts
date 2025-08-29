@@ -1,11 +1,14 @@
 # yts Hosts Start
 104.26.1.60		yts.mx
-172.67.193.23		yts.unblockninja.com
+104.21.60.66		yts.unblockninja.com
 172.67.189.155		yts.ninjaproxy1.com
-172.67.211.246		yts.proxyninja.org
-172.67.146.131		yts.proxyninja.net
-172.67.223.159		yts.torrentbay.st
-104.21.112.1		yts.torrentsbay.org
-# Update Time: 2025-08-29 00:21:28 (UTC+8) 
-# Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_yts
+104.21.67.39		yts.proxyninja.org
+104.21.41.103		yts.proxyninja.net
+104.21.46.45		yts.torrentbay.st
+104.21.80.1		yts.torrentsbay.org
+
+# Update Time: 2025-08-29 23:34:42 (UTC+8)
+# Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_yts
+# Star me: https://github.com/collegeming/host
 # yts Hosts End
+
