@@ -26,6 +26,19 @@ def is_ipv6_supported():
     except:
         return False
 
+# 测试IPv6网络连通性
+def test_ipv6_connectivity():
+    try:
+        # 使用Google的IPv6地址测试连通性
+        sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+        sock.settimeout(2)
+        sock.connect(("ipv6.google.com", 80))
+        sock.close()
+        return True
+    except Exception as e:
+        print(f"IPv6网络连通性测试失败: {str(e)}")
+        return False
+
 # 获取北京时间
 def get_bj_time_str():
     utc_dt = datetime.now(timezone.utc)
@@ -47,11 +60,12 @@ def get_csrf_token():
             'referer': f'https://dnschecker.org/country/{COUNTRY_CODE}/',
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
         }
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=5)
         if response.status_code == 200:
             return response.json().get('csrf')
         return None
-    except Exception:
+    except Exception as e:
+        print(f"获取CSRF Token失败: {str(e)}")
         return None
 
 # 从dnschecker.org获取域名IP地址
@@ -65,7 +79,7 @@ def get_dnschecker_ips(domain, record_type, csrf_token):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
         }
         
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=10)
         if response.status_code == 200:
             data = response.json()
             if 'result' in data and 'ips' in data['result']:
@@ -74,8 +88,8 @@ def get_dnschecker_ips(domain, record_type, csrf_token):
                     return [ip.strip() for ip in ips_str.split('<br />') if ip.strip()]
                 else:
                     return [ips_str.strip()] if ips_str.strip() else []
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"从dnschecker.org获取 {domain} 的{record_type}记录失败: {str(e)}")
     return []
 
 # 从dns.resolver获取域名IP地址
@@ -83,7 +97,15 @@ def get_resolver_ips(domain, record_type):
     try:
         answers = dns.resolver.resolve(domain, record_type)
         return [str(r) for r in answers]
-    except:
+    except dns.resolver.NoAnswer:
+        return []
+    except dns.resolver.NXDOMAIN:
+        return []
+    except dns.resolver.Timeout:
+        print(f"解析 {domain} 的{record_type}记录超时")
+        return []
+    except Exception as e:
+        print(f"解析 {domain} 的{record_type}记录出错: {str(e)}")
         return []
 
 # 获取域名所有IP地址（两种来源）
@@ -111,14 +133,27 @@ def get_all_ips(domain):
     return {"ipv4": ipv4_ips, "ipv6": ipv6_ips}
 
 # 测量IP地址延迟（使用TCP连接）
-def ping_ip(ip, port=80):
+def ping_ip(ip, port):
     try:
         start_time = time.time()
-        with socket.create_connection((ip, port), timeout=TIMEOUT) as sock:
-            latency = (time.time() - start_time) * 1000  # 转换为毫秒
-            return latency
+        # 根据IP类型创建socket
+        if ':' in ip:
+            sock = socket.create_connection((ip, port), timeout=TIMEOUT)
+        else:
+            sock = socket.create_connection((ip, port), timeout=TIMEOUT)
+        latency = (time.time() - start_time) * 1000  # 转换为毫秒
+        sock.close()
+        return latency
+    except socket.timeout:
+        return float('inf')
+    except socket.gaierror:
+        return float('inf')
+    except OSError as e:
+        if "Network is unreachable" in str(e):
+            return float('inf')
+        else:
+            return float('inf')
     except Exception as e:
-        print(f"Ping {ip} 时发生错误: {str(e)}")
         return float('inf')
 
 # 获取最佳IP地址
@@ -127,23 +162,24 @@ def get_best_ips(ipv4_list, ipv6_list):
     best_ipv6 = None
     min_latency_v4 = float('inf')
     min_latency_v6 = float('inf')
+    all_ipv6_invalid = True  # 标记所有IPv6是否都不可用
     
     # 测试所有IP地址的延迟
     all_ips = []
     if ipv4_list:
         all_ips.extend([(ip, "ipv4") for ip in ipv4_list])
-    if ipv6_list and is_ipv6_supported():
+    if ipv6_list:
         all_ips.extend([(ip, "ipv6") for ip in ipv6_list])
     
     if not all_ips:
         return (None, None)
     
     # 创建线程池测试所有IP
-    with ThreadPoolExecutor(max_workers=min(20, len(all_ips))) as executor:
+    with ThreadPoolExecutor(max_workers=min(10, len(all_ips))) as executor:
         future_to_ip = {}
         for ip, ip_type in all_ips:
             port = IPV6_PORT if ip_type == "ipv6" else IPV4_PORT
-            future = executor.submit(ping_ip, ip)
+            future = executor.submit(ping_ip, ip, port)
             future_to_ip[future] = (ip, ip_type)
         
         results = []
@@ -153,6 +189,10 @@ def get_best_ips(ipv4_list, ipv6_list):
             try:
                 latency = future.result()
                 results.append((ip, ip_type, latency))
+                
+                # 如果是IPv6且连接成功，标记为有可用IPv6
+                if ip_type == "ipv6" and latency < float('inf'):
+                    all_ipv6_invalid = False
             except:
                 results.append((ip, ip_type, float('inf')))
     
@@ -165,10 +205,18 @@ def get_best_ips(ipv4_list, ipv6_list):
             min_latency_v6 = latency
             best_ipv6 = ip
     
-    if best_ipv4:
+    # 如果所有IPv6都不可用，但存在IPv6地址，随机选择一个
+    if all_ipv6_invalid and ipv6_list:
+        best_ipv6 = random.choice(ipv6_list)
+        print(f"所有IPv6都不可用，随机选择一个: {best_ipv6}")
+    
+    if best_ipv4 and min_latency_v4 < float('inf'):
         print(f"IPv4最佳IP: {best_ipv4} (延迟: {min_latency_v4:.2f}ms)")
     if best_ipv6:
-        print(f"IPv6最佳IP: {best_ipv6} (延迟: {min_latency_v6:.2f}ms)")
+        if min_latency_v6 < float('inf'):
+            print(f"IPv6最佳IP: {best_ipv6} (延迟: {min_latency_v6:.2f}ms)")
+        else:
+            print(f"使用随机选择的IPv6: {best_ipv6}")
     
     return (best_ipv4, best_ipv6)
 
@@ -177,8 +225,14 @@ def load_domain_data(filename):
     try:
         with open(filename, 'r') as file:
             return json.load(file)
-    except:
-        print("无法加载domain.json文件")
+    except FileNotFoundError:
+        print(f"文件 {filename} 不存在")
+        return {}
+    except json.JSONDecodeError:
+        print(f"文件 {filename} 格式错误")
+        return {}
+    except Exception as e:
+        print(f"加载 {filename} 失败: {str(e)}")
         return {}
 
 # 生成Hosts文件内容模板
@@ -194,7 +248,9 @@ def generate_hosts_template(group_name, content, update_time):
 def main(filename):
     # 检测 IPv6 支持
     ipv6_supported = is_ipv6_supported()
+    ipv6_connectivity = test_ipv6_connectivity() if ipv6_supported else False
     print(f"系统IPv6支持状态: {'是' if ipv6_supported else '否'}")
+    print(f"IPv6网络连通性: {'是' if ipv6_connectivity else '否'}")
     
     domain_data = load_domain_data(filename)
     if not domain_data:
@@ -229,7 +285,7 @@ def main(filename):
     
     for domain, ips in resolved_domains.items():
         ipv4_list = ips["ipv4"]
-        ipv6_list = ips["ipv6"] if ipv6_supported else []
+        ipv6_list = ips["ipv6"] if ipv6_supported and ips["ipv6"] else []  # 只有存在IPv6地址时才测试
         
         # 获取最佳IPv4和IPv6地址
         best_ipv4, best_ipv6 = get_best_ips(ipv4_list, ipv6_list)
@@ -269,9 +325,9 @@ def main(filename):
         key_content[group_name] = generate_hosts_template(group_name, group_content, update_time)
         hosts_content += key_content[group_name]
     
-    # 写入各个分组文件
-    for key, content in key_content.items():
-        write_to_file(content, f'hosts_{key.lower()}')
+    ## 写入各个分组文件
+    #for key, content in key_content.items():
+    #    write_to_file(content, f'hosts_{key.lower()}')
     
     # 写入总hosts文件
     hosts_content += f"# Total Update Time: {update_time} (UTC+8)\n"
