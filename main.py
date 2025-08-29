@@ -110,41 +110,23 @@ def get_all_ips(domain):
     
     return {"ipv4": ipv4_ips, "ipv6": ipv6_ips}
 
-# 测量IP地址延迟（多次测试取平均值）
-def measure_latency(ip):
-    latencies = []
-    port = IPV6_PORT if ':' in ip else IPV4_PORT
-    
-    for _ in range(TEST_RETRIES):
+# 测量IP地址延迟（使用TCP连接）
+def ping_ip(ip, port=80):
+    try:
         start_time = time.time()
-        try:
-            # 根据IP类型创建socket
-            if ':' in ip:
-                sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
-            else:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(TIMEOUT)
-            
-            # 执行连接测试
-            sock.connect((ip, port))
-            elapsed = (time.time() - start_time) * 1000  # 转换为毫秒
-            sock.close()
-            latencies.append(elapsed)
-        except:
-            latencies.append(9999)
-        
-        time.sleep(0.05)  # 短暂间隔避免网络拥塞
-    
-    # 计算平均延迟（排除超时值）
-    valid_latencies = [lat for lat in latencies if lat < 9999]
-    return statistics.mean(valid_latencies) if valid_latencies else 9999
+        with socket.create_connection((ip, port), timeout=TIMEOUT) as sock:
+            latency = (time.time() - start_time) * 1000  # 转换为毫秒
+            return latency
+    except Exception as e:
+        print(f"Ping {ip} 时发生错误: {str(e)}")
+        return float('inf')
 
 # 获取最佳IP地址
 def get_best_ips(ipv4_list, ipv6_list):
     best_ipv4 = None
     best_ipv6 = None
-    min_latency_v4 = 9999
-    min_latency_v6 = 9999
+    min_latency_v4 = float('inf')
+    min_latency_v6 = float('inf')
     
     # 测试所有IP地址的延迟
     all_ips = []
@@ -158,7 +140,12 @@ def get_best_ips(ipv4_list, ipv6_list):
     
     # 创建线程池测试所有IP
     with ThreadPoolExecutor(max_workers=min(20, len(all_ips))) as executor:
-        future_to_ip = {executor.submit(measure_latency, ip): (ip, ip_type) for ip, ip_type in all_ips}
+        future_to_ip = {}
+        for ip, ip_type in all_ips:
+            port = IPV6_PORT if ip_type == "ipv6" else IPV4_PORT
+            future = executor.submit(ping_ip, ip)
+            future_to_ip[future] = (ip, ip_type)
+        
         results = []
         
         for future in as_completed(future_to_ip):
@@ -167,7 +154,7 @@ def get_best_ips(ipv4_list, ipv6_list):
                 latency = future.result()
                 results.append((ip, ip_type, latency))
             except:
-                results.append((ip, ip_type, 9999))
+                results.append((ip, ip_type, float('inf')))
     
     # 分别找出IPv4和IPv6中延迟最低的IP
     for ip, ip_type, latency in results:
@@ -179,9 +166,9 @@ def get_best_ips(ipv4_list, ipv6_list):
             best_ipv6 = ip
     
     if best_ipv4:
-        print(f"IPv4最佳IP: {best_ipv4} (平均延迟: {min_latency_v4:.2f}ms)")
+        print(f"IPv4最佳IP: {best_ipv4} (延迟: {min_latency_v4:.2f}ms)")
     if best_ipv6:
-        print(f"IPv6最佳IP: {best_ipv6} (平均延迟: {min_latency_v6:.2f}ms)")
+        print(f"IPv6最佳IP: {best_ipv6} (延迟: {min_latency_v6:.2f}ms)")
     
     return (best_ipv4, best_ipv6)
 
@@ -283,8 +270,8 @@ def main(filename):
         hosts_content += key_content[group_name]
     
     # 写入各个分组文件
-    # for key, content in key_content.items():
-     #    write_to_file(content, f'hosts_{key.lower()}')
+    for key, content in key_content.items():
+        write_to_file(content, f'hosts_{key.lower()}')
     
     # 写入总hosts文件
     hosts_content += f"# Total Update Time: {update_time} (UTC+8)\n"
