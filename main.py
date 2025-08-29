@@ -3,6 +3,7 @@ import os
 import dns.resolver
 import socket
 import time
+import statistics
 from datetime import datetime, timedelta, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -18,69 +19,102 @@ def write_to_file(contents, filename):
         file.write(contents)
     print(f"{filename}文件写入成功")
 
-# 测量IP地址延迟
-def measure_latency(ip, port=443, timeout=1.5):
+# 测量IP地址延迟（多次测试取平均值）
+def measure_latency(ip, port=443, timeout=1.5, retries=5):
     """
-    测量给定IP地址的TCP连接延迟
+    测量给定IP地址的TCP连接延迟（多次测试取平均值）
     :param ip: IP地址 (IPv4或IPv6)
     :param port: 测试端口
-    :param timeout: 超时时间（秒）
-    :return: 延迟（毫秒）或超时返回9999ms
+    :param timeout: 单次测试超时时间（秒）
+    :param retries: 测试次数
+    :return: 平均延迟（毫秒）或超时返回9999ms
     """
-    start_time = time.time()
-    try:
-        # 根据IP类型创建socket
-        if ':' in ip:
-            sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
-        else:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(timeout)
-        
-        # 执行连接测试
-        sock.connect((ip, port))
-        elapsed = (time.time() - start_time) * 1000  # 转换为毫秒
-        sock.close()
-        return elapsed
-    except:
-        return 9999  # 表示连接超时/失败
+    latencies = []
+    
+    for _ in range(retries):
+        start_time = time.time()
+        try:
+            # 根据IP类型创建socket
+            if ':' in ip:
+                sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+            else:
+                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(timeout)
+            
+            # 执行连接测试
+            sock.connect((ip, port))
+            elapsed = (time.time() - start_time) * 1000  # 转换为毫秒
+            sock.close()
+            latencies.append(elapsed)
+        except:
+            latencies.append(9999)  # 表示连接超时/失败
+        time.sleep(0.1)  # 短暂间隔避免网络拥塞
+    
+    # 计算平均延迟（排除超时值）
+    valid_latencies = [lat for lat in latencies if lat < 9999]
+    
+    if valid_latencies:
+        avg_latency = statistics.mean(valid_latencies)
+        return avg_latency
+    else:
+        return 9999
 
-# 获取最佳IP地址
-def get_best_ip(ips, protocol='ipv4'):
+# 获取最佳IP地址（同时处理IPv4和IPv6）
+def get_best_ips(ipv4_list, ipv6_list):
     """
-    从IP列表中找出延迟最低的最佳IP地址
-    :param ips: IP地址列表
-    :param protocol: 协议类型（仅用于日志）
-    :return: 最佳IP地址或None
+    从IPv4和IPv6列表中分别找出延迟最低的最佳IP地址
+    :param ipv4_list: IPv4地址列表
+    :param ipv6_list: IPv6地址列表
+    :return: 元组 (最佳IPv4地址, 最佳IPv6地址)
     """
-    if not ips:
-        return None
-        
+    best_ipv4 = None
+    best_ipv6 = None
+    
     # 使用线程池并发测试所有IP地址的延迟
-    with ThreadPoolExecutor(max_workers=min(20, len(ips))) as executor:
-        future_to_ip = {executor.submit(measure_latency, ip): ip for ip in ips}
+    all_ips = []
+    if ipv4_list:
+        all_ips.extend([(ip, "ipv4") for ip in ipv4_list])
+    if ipv6_list:
+        all_ips.extend([(ip, "ipv6") for ip in ipv6_list])
+    
+    if not all_ips:
+        return (None, None)
+    
+    # 创建线程池测试所有IP
+    with ThreadPoolExecutor(max_workers=min(20, len(all_ips))) as executor:
+        future_to_ip = {executor.submit(measure_latency, ip): (ip, ip_type) for ip, ip_type in all_ips}
         results = []
         
         for future in as_completed(future_to_ip):
-            ip = future_to_ip[future]
+            ip, ip_type = future_to_ip[future]
             try:
                 latency = future.result()
-                results.append((ip, latency))
+                results.append((ip, ip_type, latency))
             except Exception as e:
                 print(f"测量{ip}延迟时出错: {str(e)}")
-                results.append((ip, 9999))
+                results.append((ip, ip_type, 9999))
     
-    # 找出延迟最低的IP
-    best_ip, min_latency = min(results, key=lambda x: x[1])
+    # 分别找出IPv4和IPv6中延迟最低的IP
+    ipv4_results = [(ip, lat) for ip, ip_type, lat in results if ip_type == "ipv4"]
+    ipv6_results = [(ip, lat) for ip, ip_type, lat in results if ip_type == "ipv6"]
     
-    # 筛选延迟低于800ms的IP
-    valid_ips = [(ip, lat) for ip, lat in results if lat < 800]
+    if ipv4_results:
+        best_ipv4, min_latency_v4 = min(ipv4_results, key=lambda x: x[1])
+        # 筛选延迟低于800ms的IP
+        valid_ipv4 = [ip for ip, lat in ipv4_results if lat < 800]
+        if valid_ipv4:
+            best_ipv4 = min(valid_ipv4, key=lambda x: x[1])[0]
+        print(f"IPv4最佳IP: {best_ipv4} (延迟: {min_latency_v4:.2f}ms)")
     
-    if valid_ips:
-        best_valid_ip = min(valid_ips, key=lambda x: x[1])[0]
-        print(f"{protocol}最佳IP: {best_valid_ip} (延迟: {min_latency:.2f}ms)")
-        return best_valid_ip
+    if ipv6_results:
+        best_ipv6, min_latency_v6 = min(ipv6_results, key=lambda x: x[1])
+        # 筛选延迟低于800ms的IP
+        valid_ipv6 = [ip for ip, lat in ipv6_results if lat < 800]
+        if valid_ipv6:
+            best_ipv6 = min(valid_ipv6, key=lambda x: x[1])[0]
+        print(f"IPv6最佳IP: {best_ipv6} (延迟: {min_latency_v6:.2f}ms)")
     
-    return None if min_latency >= 9999 else best_ip
+    return (best_ipv4, best_ipv6)
 
 # DNS解析（同时获取A和AAAA记录）
 def dns_lookup(domain):
@@ -152,21 +186,21 @@ def main(filename):
     domain_best_ips = {}
     
     for domain, ips in resolved_domains.items():
+        ipv4_list = ips["ipv4"]
+        ipv6_list = ips["ipv6"]
+        
+        # 获取最佳IPv4和IPv6地址
+        best_ipv4, best_ipv6 = get_best_ips(ipv4_list, ipv6_list)
+        
         best_ips = {}
-        
-        # 获取最佳IPv6地址
-        if ips["ipv6"]:
-            best_ipv6 = get_best_ip(ips["ipv6"], "IPv6")
-            if best_ipv6:
-                best_ips["ipv6"] = best_ipv6
-        
-        # 获取最佳IPv4地址
-        if ips["ipv4"]:
-            best_ipv4 = get_best_ip(ips["ipv4"], "IPv4")
-            if best_ipv4:
-                best_ips["ipv4"] = best_ipv4
+        if best_ipv4:
+            best_ips["ipv4"] = best_ipv4
+        if best_ipv6:
+            best_ips["ipv6"] = best_ipv6
         
         domain_best_ips[domain] = best_ips
+    
+    print("IP延迟测试完成，开始生成hosts文件...")
     
     # 生成hosts文件内容
     key_content = {}
