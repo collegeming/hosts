@@ -1,10 +1,10 @@
 # TMDB Hosts Start
-3.171.38.13		www.themoviedb.org
-3.170.103.4		api.themoviedb.org
+3.171.38.80		www.themoviedb.org
+18.161.156.50		api.themoviedb.org
 169.150.236.97		image.tmdb.org
-18.160.102.81		api.tmdb.org
+108.159.227.74		api.tmdb.org
 
-# Update Time: 2025-08-29 23:34:42 (UTC+8)
+# Update Time: 2025-08-29 23:44:47 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_tmdb
 # Star me: https://github.com/collegeming/host
 # TMDB Hosts End

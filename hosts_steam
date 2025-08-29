@@ -1,21 +1,21 @@
 # Steam Hosts Start
-23.2.95.19		steam-chat.com
+23.50.36.90		steam-chat.com
 23.60.136.72		steamcommunity.com
-23.2.95.19		www.steamcommunity.com
-23.60.136.72		api.steampowered.com
+23.50.36.90		www.steamcommunity.com
+23.65.19.99		api.steampowered.com
 23.60.136.72		help.steampowered.com
-23.78.8.100		store.steampowered.com
-23.46.30.133		media.steampowered.com
+23.11.197.221		store.steampowered.com
+23.48.99.80		media.steampowered.com
 23.60.136.72		login.steampowered.com
-23.78.8.100		checkout.steampowered.com
+23.11.197.221		checkout.steampowered.com
 146.75.79.52		community.steamstatic.com
-23.46.30.180		avatars.akamai.steamstatic.com
-23.46.30.133		cdn.akamai.steamstatic.com
-23.46.30.156		community.akamai.steamstatic.com
-23.46.30.135		store.akamai.steamstatic.com
-23.54.76.12		steamcdn-a.akamaihd.net
+23.48.99.70		avatars.akamai.steamstatic.com
+23.39.51.230		cdn.akamai.steamstatic.com
+23.48.99.73		community.akamai.steamstatic.com
+23.48.99.83		store.akamai.steamstatic.com
+23.220.246.175		steamcdn-a.akamaihd.net
 
-# Update Time: 2025-08-29 23:34:42 (UTC+8)
+# Update Time: 2025-08-29 23:44:47 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_steam
 # Star me: https://github.com/collegeming/host
 # Steam Hosts End
