@@ -13,6 +13,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      # 启用 IPv6 支持
+      - name: Enable IPv6
+        run: |
+          echo "net.ipv6.conf.all.disable_ipv6 = 0" | sudo tee -a /etc/sysctl.conf
+          sudo sysctl -p
+          echo "IPv6 enabled:"
+          ip -6 addr show
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
