@@ -7,6 +7,17 @@ import statistics
 from datetime import datetime, timedelta, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+# 检测 IPv6 支持
+def is_ipv6_supported():
+    """检查系统是否支持 IPv6"""
+    try:
+        # 尝试创建一个 IPv6 socket
+        sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
+        sock.close()
+        return True
+    except:
+        return False
+
 # 获取北京时间
 def get_bj_time_str():
     utc_dt = datetime.now(timezone.utc)
@@ -36,6 +47,9 @@ def measure_latency(ip, port=443, timeout=1.5, retries=5):
         try:
             # 根据IP类型创建socket
             if ':' in ip:
+                if not is_ipv6_supported():
+                    print(f"警告：系统不支持IPv6，跳过测试 {ip}")
+                    return 9999
                 sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
             else:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -46,8 +60,21 @@ def measure_latency(ip, port=443, timeout=1.5, retries=5):
             elapsed = (time.time() - start_time) * 1000  # 转换为毫秒
             sock.close()
             latencies.append(elapsed)
-        except:
-            latencies.append(9999)  # 表示连接超时/失败
+        except socket.gaierror:
+            # 地址解析错误
+            latencies.append(9999)
+        except socket.timeout:
+            # 连接超时
+            latencies.append(9999)
+        except OSError as e:
+            # 网络错误
+            print(f"连接 {ip} 时出错: {str(e)}")
+            latencies.append(9999)
+        except Exception as e:
+            # 其他错误
+            print(f"测试 {ip} 时发生未知错误: {str(e)}")
+            latencies.append(9999)
+        
         time.sleep(0.1)  # 短暂间隔避免网络拥塞
     
     # 计算平均延迟（排除超时值）
@@ -74,7 +101,7 @@ def get_best_ips(ipv4_list, ipv6_list):
     all_ips = []
     if ipv4_list:
         all_ips.extend([(ip, "ipv4") for ip in ipv4_list])
-    if ipv6_list:
+    if ipv6_list and is_ipv6_supported():
         all_ips.extend([(ip, "ipv6") for ip in ipv6_list])
     
     if not all_ips:
@@ -159,6 +186,10 @@ def load_domain_data(filename):
 
 # 主程序
 def main(filename):
+    # 检测 IPv6 支持
+    ipv6_supported = is_ipv6_supported()
+    print(f"系统IPv6支持状态: {'是' if ipv6_supported else '否'}")
+    
     domain_data = load_domain_data(filename)
     resolved_domains = {}
     update_time = get_bj_time_str()
@@ -220,7 +251,7 @@ def main(filename):
                 content += f"{best_ips['ipv4']}\t\t{domain}\n"
         
         content += f"# Update Time: {update_time} (UTC+8)\n"
-        content += f"# Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_{key.lower()}\n"
+        content += f"# Update URL: https://raw.githubusercontent.com/collegeming/hosts/main/hosts_{key.lower()}\n"
         content += f"# {key} Hosts End\n\n"
         key_content[key] = content
         hosts_content += content
@@ -231,7 +262,7 @@ def main(filename):
     
     # 写入总hosts文件
     hosts_content += f"# Total Update Time: {update_time} (UTC+8)\n"
-    hosts_content += f"# Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts"
+    hosts_content += f"# Update URL: https://raw.githubusercontent.com/collegeming/hosts/main/hosts"
     write_to_file(hosts_content, 'hosts')
     
     print("Hosts文件更新成功")
