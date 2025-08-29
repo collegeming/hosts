@@ -13,7 +13,7 @@
 1		gist.github.com
 1		live.github.com
 1		github.githubassets.com
-2606:50c0:8001::154		avatars.githubusercontent.com
+2606:50c0:8003::154		avatars.githubusercontent.com
 1		avatars.githubusercontent.com
 1		avatars0.githubusercontent.com
 1		avatars1.githubusercontent.com
@@ -28,10 +28,10 @@
 1		favicons.githubusercontent.com
 2606:50c0:8003::154		raw.githubusercontent.com
 1		raw.githubusercontent.com
-2606:50c0:8001::154		media.githubusercontent.com
+2606:50c0:8003::154		media.githubusercontent.com
 1		media.githubusercontent.com
 1		objects.githubusercontent.com
-2606:50c0:8002::154		user-images.githubusercontent.com
+2606:50c0:8001::154		user-images.githubusercontent.com
 1		user-images.githubusercontent.com
 2620:1ec:21::16		pipelines.actions.githubusercontent.com
 1		pipelines.actions.githubusercontent.com
@@ -43,7 +43,7 @@
 1		github.map.fastly.net
 1		github.global.ssl.fastly.net
 1		vscode.dev
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_github
 # GitHub Hosts End
 
@@ -54,109 +54,109 @@
 2		api.steampowered.com
 2		help.steampowered.com
 2		store.steampowered.com
-1		media.steampowered.com
+2		media.steampowered.com
 2		login.steampowered.com
 2		checkout.steampowered.com
 1		community.steamstatic.com
-2600:1407:b800::6872:4f93		avatars.akamai.steamstatic.com
-1		avatars.akamai.steamstatic.com
-1		cdn.akamai.steamstatic.com
-1		community.akamai.steamstatic.com
-1		store.akamai.steamstatic.com
+2600:1418:a000:10::17c1:c804		avatars.akamai.steamstatic.com
+2		avatars.akamai.steamstatic.com
+2		cdn.akamai.steamstatic.com
+2		community.akamai.steamstatic.com
+2		store.akamai.steamstatic.com
 2		steamcdn-a.akamaihd.net
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_steam
 # Steam Hosts End
 
 # TMDB Hosts Start
-2600:9000:28a0:ee00:e:5373:440:93a1		www.themoviedb.org
-3		www.themoviedb.org
-2600:9000:287c:5200:c:174a:c400:93a1		api.themoviedb.org
+2600:9000:250d:9e00:e:5373:440:93a1		www.themoviedb.org
+1		www.themoviedb.org
+2600:9000:2464:8600:c:174a:c400:93a1		api.themoviedb.org
 1		api.themoviedb.org
 2400:52e0:1a00::1207:2		image.tmdb.org
 1		image.tmdb.org
-2600:9000:2349:c00:10:fb02:4000:93a1		api.tmdb.org
-5		api.tmdb.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+2600:9000:2464:1c00:10:fb02:4000:93a1		api.tmdb.org
+1		api.tmdb.org
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_tmdb
 # TMDB Hosts End
 
 # Google_Translate Hosts Start
-2607:f8b0:4009:809::200a		translate.googleapis.com
-1		translate.googleapis.com
-2607:f8b0:4009:801::200e		translate.google.com
+2607:f8b0:4001:c01::5f		translate.googleapis.com
+6		translate.googleapis.com
+2607:f8b0:4001:c10::71		translate.google.com
 1		translate.google.com
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_google_translate
 # Google_Translate Hosts End
 
 # wallhaven Hosts Start
-2606:4700:20::681a:b23		wallhaven.cc
+2606:4700:20::ac43:4a6f		wallhaven.cc
 1		wallhaven.cc
 2606:4700:20::681a:b23		th.wallhaven.cc
 1		th.wallhaven.cc
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_wallhaven
 # wallhaven Hosts End
 
 # 529065 Hosts Start
-2606:4700:3037::ac43:a494		529065.xyz
+2606:4700:3033::6815:59c7		529065.xyz
 1		529065.xyz
 2606:4700:3030::6815:5c67		529066.xyz
 1		529066.xyz
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_529065
 # 529065 Hosts End
 
 # acgrip Hosts Start
 1		acg.rip
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_acgrip
 # acgrip Hosts End
 
 # animetosho Hosts Start
 2605:6400:30:f127::a7		animetosho.org
 1		animetosho.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_animetosho
 # animetosho Hosts End
 
 # anirena Hosts Start
 2606:4700:3030::6815:4cd4		anirena.com
 1		anirena.com
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_anirena
 # anirena Hosts End
 
 # asnet Hosts Start
 2001:470:1f1d:2e7::ffff		asnet.pw
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_asnet
 # asnet Hosts End
 
 # bangumi Hosts Start
-2606:4700:3030::6815:3001		bitsearch.to
+2606:4700:3030::6815:1001		bitsearch.to
 1		bitsearch.to
-2606:4700:3034::6815:1acd		solidtorrents.to
+2606:4700:3030::ac43:a889		solidtorrents.to
 1		solidtorrents.to
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_bangumi
 # bangumi Hosts End
 
 # dmhy Hosts Start
-2606:4700:20::ac43:620f		share.dmhy.org
+2606:4700:20::6819:3e6a		share.dmhy.org
 1		share.dmhy.org
-2606:4700:20::6819:3e6a		dmhy.org
+2606:4700:20::6819:3d6a		dmhy.org
 1		dmhy.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_dmhy
 # dmhy Hosts End
 
 # yts Hosts Start
 1		yts.mx
-2606:4700:3033::6815:3c42		yts.unblockninja.com
+2606:4700:3033::ac43:c117		yts.unblockninja.com
 1		yts.unblockninja.com
-2606:4700:3031::ac43:bd9b		yts.ninjaproxy1.com
+2606:4700:3035::6815:5187		yts.ninjaproxy1.com
 1		yts.ninjaproxy1.com
 2606:4700:3034::ac43:d3f6		yts.proxyninja.org
 1		yts.proxyninja.org
@@ -166,14 +166,14 @@
 1		yts.torrentbay.st
 2606:4700:3030::6815:4001		yts.torrentsbay.org
 1		yts.torrentsbay.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_yts
 # yts Hosts End
 
 # uindex Hosts Start
 2606:4700:3031::ac43:8483		uindex.org
 1		uindex.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_uindex
 # uindex Hosts End
 
@@ -182,140 +182,140 @@
 1		u3c3.com
 2606:4700:3030::6815:5001		u001.25img.com
 1		u001.25img.com
-2606:4700:3030::6815:7001		u002.25img.com
+2606:4700:3030::6815:5001		u002.25img.com
 1		u002.25img.com
-2606:4700:3030::6815:5001		u003.25img.com
+2606:4700:3030::6815:4001		u003.25img.com
 1		u003.25img.com
-2606:4700:3030::6815:3001		m0m0m1m.mnmnmnmnmn.com
+2606:4700:3030::6815:4001		m0m0m1m.mnmnmnmnmn.com
 1		m0m0m1m.mnmnmnmnmn.com
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_u3c3
 # u3c3 Hosts End
 
 # torrentgalaxy Hosts Start
-2606:4700:3037::6815:12bb		torrentgalaxy.one
+2606:4700:3032::ac43:b721		torrentgalaxy.one
 1		torrentgalaxy.one
-2606:4700:130:436c:6f75:6466:6c61:7265		torrentgalaxy.info
+2606:4700:3033::ac43:a273		torrentgalaxy.info
 1		torrentgalaxy.info
-2606:4700:3031::ac43:813a		torrentgalaxy.space
+2606:4700:3037::6815:17f		torrentgalaxy.space
 1		torrentgalaxy.space
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_torrentgalaxy
 # torrentgalaxy Hosts End
 
 # torrentdownload Hosts Start
-2606:4700:3037::ac43:8e41		torrentdownload.info
+2606:4700:3032::6815:1b67		torrentdownload.info
 1		torrentdownload.info
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_torrentdownload
 # torrentdownload Hosts End
 
 # torrentcore Hosts Start
-2606:4700:3035::ac43:a7b2		torrentcore.xyz
+2606:4700:3036::6815:2310		torrentcore.xyz
 1		torrentcore.xyz
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_torrentcore
 # torrentcore Hosts End
 
 # torrentdownloads Hosts Start
-2606:4700:20::681a:c86		torrentdownloads.pro
+2606:4700:20::ac43:462f		torrentdownloads.pro
 1		torrentdownloads.pro
 2606:4700:3033::6815:3c42		torrentdownloads.unblockninja.com
 1		torrentdownloads.unblockninja.com
-2606:4700:3035::6815:5187		torrentdownloads.ninjaproxy1.com
+2606:4700:3031::ac43:bd9b		torrentdownloads.ninjaproxy1.com
 1		torrentdownloads.ninjaproxy1.com
 2606:4700:3034::6815:4327		torrentdownloads.proxyninja.org
 1		torrentdownloads.proxyninja.org
-2606:4700:3035::6815:2967		torrentdownloads.proxyninja.net
+2606:4700:130:436c:6f75:6466:6c61:7265		torrentdownloads.proxyninja.net
 1		torrentdownloads.proxyninja.net
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_torrentdownloads
 # torrentdownloads Hosts End
 
 # tokyotosho Hosts Start
-2606:4700:3031::6815:5dbb		tokyotosho.info
+2606:4700:3037::ac43:d601		tokyotosho.info
 1		tokyotosho.info
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_tokyotosho
 # tokyotosho Hosts End
 
 # therarbg Hosts Start
 2606:4700:3036::6815:25d5		therarbg.to
 1		therarbg.to
-2606:4700:3033::6815:5893		therarbg.com
+2606:4700:3033::ac43:b904		therarbg.com
 1		therarbg.com
-2606:4700:3030::6815:6001		therar.site
+2606:4700:3030::6815:7001		therar.site
 1		therar.site
 2606:4700:3033::ac43:c117		rarbg.unblockninja.com
 1		rarbg.unblockninja.com
 2606:4700:3035::6815:5187		rarbg.ninjaproxy1.com
 1		rarbg.ninjaproxy1.com
-2606:4700:3034::6815:4327		rarbg.proxyninja.org
+2606:4700:3034::ac43:d3f6		rarbg.proxyninja.org
 1		rarbg.proxyninja.org
-2606:4700:130:436c:6f75:6466:6c61:7265		rarbg.proxyninja.net
+2606:4700:3031::ac43:9283		rarbg.proxyninja.net
 1		rarbg.proxyninja.net
 2606:4700:3036::6815:2e2d		rarbg.torrentbay.st
 1		rarbg.torrentbay.st
-2606:4700:3030::6815:6001		rarbg.torrentsbay.org
+2606:4700:3030::6815:7001		rarbg.torrentsbay.org
 1		rarbg.torrentsbay.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_therarbg
 # therarbg Hosts End
 
 # subsplease Hosts Start
-2606:4700:3035::6815:27ea		subsplease.org
+2606:4700:3030::ac43:abd5		subsplease.org
 1		subsplease.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_subsplease
 # subsplease Hosts End
 
 # showrss Hosts Start
-2606:4700:3030::6815:1001		showrss.info
+2606:4700:3030::6815:3001		showrss.info
 1		showrss.info
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_showrss
 # showrss Hosts End
 
 # shanaproject Hosts Start
-2606:4700:3034::6815:307e		shanaproject.com
+2606:4700:3030::ac43:9798		shanaproject.com
 1		shanaproject.com
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_shanaproject
 # shanaproject Hosts End
 
 # nyaa Hosts Start
 1		nyaa.si
-2606:4700:3030::6815:5974		nyaa.iss.ink
+2606:4700:3035::ac43:9ee8		nyaa.iss.ink
 1		nyaa.iss.ink
-2606:4700:3036::ac43:a172		nyaa.land
+2606:4700:3037::6815:52b7		nyaa.land
 1		nyaa.land
-2606:4700:3033::6815:3c42		nyaa.unblockninja.com
+2606:4700:3033::ac43:c117		nyaa.unblockninja.com
 1		nyaa.unblockninja.com
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_nyaa
 # nyaa Hosts End
 
 # mikanani Hosts Start
 2606:4700:3032::ac43:df37		mikanani.me
 1		mikanani.me
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_mikanani
 # mikanani Hosts End
 
 # magnetcatcat Hosts Start
 2606:4700:3030::6815:9d5		magnetcatcat.com
 1		magnetcatcat.com
-2606:4700:3032::ac43:86e2		clmclm.com
+2606:4700:3033::6815:19ea		clmclm.com
 1		clmclm.com
 2606:4700:3032::ac43:9927		www.8800492.xyz
 1		www.8800492.xyz
 2606:4700:3036::6815:518f		www.8800493.xyz
 1		www.8800493.xyz
-2606:4700:3030::6815:5001		www.8800494.xyz
+2606:4700:3030::6815:1001		www.8800494.xyz
 1		www.8800494.xyz
 2606:4700:3035::ac43:8d95		www.8800490.xyz
 1		www.8800490.xyz
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_magnetcatcat
 # magnetcatcat Hosts End
 
@@ -326,49 +326,49 @@
 1		kickasstorrents.bz
 2606:4700:3033::6815:328d		kkickass.com
 1		kkickass.com
-2606:4700:3032::6815:3f4c		kkat.net
+2606:4700:3033::ac43:aa46		kkat.net
 1		kkat.net
-2606:4700:3034::6815:3a7b		kick4ss.com
+2606:4700:3036::ac43:cc08		kick4ss.com
 1		kick4ss.com
 2606:4700:3031::6815:486b		kickasst.net
 1		kickasst.net
 2606:4700:3031::6815:31a7		kickasstorrents.id
 1		kickasstorrents.id
-2606:4700:3030::6815:7001		thekat.cc
+2606:4700:3030::6815:5001		thekat.cc
 1		thekat.cc
-2606:4700:3031::6815:643		kickasshydra.dev
+2606:4700:3033::ac43:8692		kickasshydra.dev
 1		kickasshydra.dev
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_kickass
 # kickass Hosts End
 
 # kickass.torrentbay Hosts Start
-2606:4700:3036::6815:2e2d		kickass.torrentbay.st
+2606:4700:3037::ac43:df9f		kickass.torrentbay.st
 1		kickass.torrentbay.st
 2606:4700:3030::6815:1001		kickass.torrentsbay.org
 1		kickass.torrentsbay.org
-2606:4700:3033::ac43:c117		kickasstorrents.unblockninja.com
+2606:4700:3033::6815:3c42		kickasstorrents.unblockninja.com
 1		kickasstorrents.unblockninja.com
-2606:4700:3031::ac43:bd9b		kickasstorrents.ninjaproxy1.com
+2606:4700:3035::6815:5187		kickasstorrents.ninjaproxy1.com
 1		kickasstorrents.ninjaproxy1.com
-2606:4700:3034::ac43:d3f6		kickasstorrents.proxyninja.org
+2606:4700:3034::6815:4327		kickasstorrents.proxyninja.org
 1		kickasstorrents.proxyninja.org
-2606:4700:3035::6815:2967		kickasstorrents.proxyninja.net
+2606:4700:3031::ac43:9283		kickasstorrents.proxyninja.net
 1		kickasstorrents.proxyninja.net
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_kickass.torrentbay
 # kickass.torrentbay Hosts End
 
 # isohunt Hosts Start
 2606:4700:3034::6815:1bb1		isohunt.ch
 1		isohunt.ch
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_isohunt
 # isohunt Hosts End
 
 # archive Hosts Start
 2		archive.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_archive
 # archive Hosts End
 
@@ -379,11 +379,11 @@
 1		eztv.wf
 2606:4700:3032::ac43:cb6c		eztv.tf
 1		eztv.tf
-2606:4700:3035::6815:2b6d		eztv.yt
+2606:4700:3035::ac43:b227		eztv.yt
 1		eztv.yt
 2606:4700:3036::6815:19bd		eztv1.xyz
 1		eztv1.xyz
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_eztvx
 # eztvx Hosts End
 
@@ -394,88 +394,88 @@
 1		extratorrent.ninjaproxy1.com
 2606:4700:3034::6815:4327		extratorrent.proxyninja.org
 1		extratorrent.proxyninja.org
-2606:4700:130:436c:6f75:6466:6c61:7265		extratorrent.proxyninja.net
+2606:4700:3035::6815:2967		extratorrent.proxyninja.net
 1		extratorrent.proxyninja.net
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_extratorrent
 # extratorrent Hosts End
 
 # ext Hosts Start
-2606:4700:3037::6815:520f		ext.to
+2606:4700:3030::ac43:c151		ext.to
 1		ext.to
-2606:4700:3032::6815:3153		search.extto.com
+2606:4700:3036::ac43:a06e		search.extto.com
 1		search.extto.com
 2606:4700:3037::ac43:df9f		extranet.torrentbay.st
 1		extranet.torrentbay.st
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_ext
 # ext Hosts End
 
 # e-hentai Hosts Start
 1		e-hentai.org
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_e-hentai
 # e-hentai Hosts End
 
 # imbt Hosts Start
 1		imbt.one
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_imbt
 # imbt Hosts End
 
 # thepiratebay Hosts Start
-2606:4700:7::a29f:8806		thepiratebay.org
+2606:4700:7::a29f:8906		thepiratebay.org
 1		thepiratebay.org
-2606:4700:3033::ac43:c117		thepiratebay.unblockninja.com
+2606:4700:3033::6815:3c42		thepiratebay.unblockninja.com
 1		thepiratebay.unblockninja.com
-2606:4700:3035::6815:5187		thepiratebay.ninjaproxy1.com
+2606:4700:3031::ac43:bd9b		thepiratebay.ninjaproxy1.com
 1		thepiratebay.ninjaproxy1.com
-2606:4700:3034::6815:4327		tpb.proxyninja.org
+2606:4700:3034::ac43:d3f6		tpb.proxyninja.org
 1		tpb.proxyninja.org
-2606:4700:130:436c:6f75:6466:6c61:7265		thepiratebay.proxyninja.net
+2606:4700:3031::ac43:9283		thepiratebay.proxyninja.net
 1		thepiratebay.proxyninja.net
-2606:4700:3037::ac43:df9f		thepiratebay.torrentbay.st
+2606:4700:3036::6815:2e2d		thepiratebay.torrentbay.st
 1		thepiratebay.torrentbay.st
 2606:4700:3037::ac43:a663		tpb.skynetcloud.site
 1		tpb.skynetcloud.site
 2606:4700:3030::6815:5001		piratehaven.xyz
 1		piratehaven.xyz
-2606:4700:3033::6815:4cab		mirrorbay.top
+2606:4700:3030::ac43:c5f8		mirrorbay.top
 1		mirrorbay.top
-2606:4700:3030::6815:2001		thepiratebay0.org
+2606:4700:3030::6815:4001		thepiratebay0.org
 1		thepiratebay0.org
-2606:4700:3033::6815:487d		thepiratebay10.xyz
+2606:4700:3035::ac43:b8a1		thepiratebay10.xyz
 1		thepiratebay10.xyz
-2606:4700:3037::ac43:896d		pirateproxylive.org
+2606:4700:3031::6815:56e4		pirateproxylive.org
 1		pirateproxylive.org
 2606:4700:3034::ac43:b571		thehiddenbay.com
 1		thehiddenbay.com
 2606:4700:3033::ac43:a8a6		thepiratebay.zone
 1		thepiratebay.zone
-2606:4700:3034::ac43:9a96		tpb.party
+2606:4700:3035::6815:618		tpb.party
 1		tpb.party
-2606:4700:3030::6815:4001		piratebayproxy.live
+2606:4700:3030::6815:3001		piratebayproxy.live
 1		piratebayproxy.live
-2606:4700:3032::ac43:a067		piratebay.live
+2606:4700:3037::6815:4289		piratebay.live
 1		piratebay.live
-2606:4700:3033::6815:ea0		piratebay.party
+2606:4700:3033::ac43:a007		piratebay.party
 1		piratebay.party
-2606:4700:3033::6815:56df		thepiratebay.party
+2606:4700:3031::ac43:8942		thepiratebay.party
 1		thepiratebay.party
-2606:4700:3030::6815:2001		thepiratebaye.org
+2606:4700:3030::6815:3001		thepiratebaye.org
 1		thepiratebaye.org
-2606:4700:130:436c:6f75:6466:6c61:7265		thepiratebay.cloud
+2606:4700:3037::6815:474		thepiratebay.cloud
 1		thepiratebay.cloud
-2606:4700:3031::6815:387d		tpb-proxy.xyz
+2606:4700:3036::ac43:972b		tpb-proxy.xyz
 1		tpb-proxy.xyz
 2606:4700:3035::6815:4fed		tpb.re
 1		tpb.re
-47.91.170.222		tpirbay.site
+8.218.208.240		tpirbay.site
 47.91.170.222		tpirbay.top
-47.76.127.217		tpirbay.xyz
-# Update Time: 2025-08-29 22:30:34 (UTC+8)
+47.91.170.222		tpirbay.xyz
+# Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts_thepiratebay
 # thepiratebay Hosts End
 
-# Total Update Time: 2025-08-29 22:30:34 (UTC+8)
+# Total Update Time: 2025-08-29 22:36:39 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/oopsunix/hosts/main/hosts
