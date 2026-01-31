@@ -1,122 +1,122 @@
 # GitHub Hosts Start
-185.199.109.153		github.io
+185.199.111.153		github.io
 52.224.38.193		github.dev
 192.0.66.2		github.blog
 140.82.112.17		github.community
-185.199.108.153		githubstatus.com
+185.199.111.153		githubstatus.com
 140.82.114.3		github.com
 # 未找到 alive.github.com 的有效IP地址
 140.82.114.5		api.github.com
 # 未找到 assets-cdn.github.com 的有效IP地址
-140.82.114.21		central.github.com
-140.82.112.9		codeload.github.com
-140.82.112.21		collector.github.com
-140.82.114.3		gist.github.com
+140.82.112.22		central.github.com
+140.82.112.10		codeload.github.com
+140.82.112.22		collector.github.com
+140.82.112.4		gist.github.com
 # 未找到 live.github.com 的有效IP地址
 185.199.109.154		github.githubassets.com
-2606:50c0:8003::154		avatars.githubusercontent.com
-185.199.108.133		avatars.githubusercontent.com
-185.199.109.133		avatars0.githubusercontent.com
-185.199.108.133		avatars1.githubusercontent.com
-185.199.109.133		avatars2.githubusercontent.com
-185.199.108.133		avatars3.githubusercontent.com
-185.199.110.133		avatars4.githubusercontent.com
-185.199.110.133		avatars5.githubusercontent.com
+2606:50c0:8001::154		avatars.githubusercontent.com
+185.199.111.133		avatars.githubusercontent.com
+185.199.111.133		avatars0.githubusercontent.com
+185.199.111.133		avatars1.githubusercontent.com
+185.199.108.133		avatars2.githubusercontent.com
+185.199.110.133		avatars3.githubusercontent.com
+185.199.111.133		avatars4.githubusercontent.com
+185.199.111.133		avatars5.githubusercontent.com
 185.199.110.133		camo.githubusercontent.com
 185.199.108.133		cloud.githubusercontent.com
-20.85.130.105		copilot-proxy.githubusercontent.com
+138.91.182.224		copilot-proxy.githubusercontent.com
 185.199.108.133		desktop.githubusercontent.com
-185.199.108.133		favicons.githubusercontent.com
-2606:50c0:8000::154		raw.githubusercontent.com
-185.199.108.133		raw.githubusercontent.com
-2606:50c0:8001::154		media.githubusercontent.com
-185.199.110.133		media.githubusercontent.com
-185.199.108.133		objects.githubusercontent.com
-2606:50c0:8002::154		user-images.githubusercontent.com
-185.199.110.133		user-images.githubusercontent.com
+185.199.111.133		favicons.githubusercontent.com
+2606:50c0:8003::154		raw.githubusercontent.com
+185.199.109.133		raw.githubusercontent.com
+2606:50c0:8002::154		media.githubusercontent.com
+185.199.111.133		media.githubusercontent.com
+185.199.110.133		objects.githubusercontent.com
+2606:50c0:8000::154		user-images.githubusercontent.com
+185.199.109.133		user-images.githubusercontent.com
 2620:1ec:21::16		pipelines.actions.githubusercontent.com
 13.107.42.16		pipelines.actions.githubusercontent.com
-52.216.38.177		github-cloud.s3.amazonaws.com
-52.216.26.76		github-com.s3.amazonaws.com
-54.231.140.41		github-production-release-asset-2e65be.s3.amazonaws.com
-52.216.37.169		github-production-repository-file-5c1aeb.s3.amazonaws.com
-3.5.29.219		github-production-user-asset-6210df.s3.amazonaws.com
-185.199.108.133		github.map.fastly.net
-199.232.89.194		github.global.ssl.fastly.net
-13.107.213.41		vscode.dev
+3.5.27.219		github-cloud.s3.amazonaws.com
+3.5.11.228		github-com.s3.amazonaws.com
+16.15.216.47		github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.216.47		github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.216.237.139		github-production-user-asset-6210df.s3.amazonaws.com
+185.199.110.133		github.map.fastly.net
+146.75.105.194		github.global.ssl.fastly.net
+13.107.246.38		vscode.dev
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_github
 # Star me: https://github.com/collegeming/host
 # GitHub Hosts End
 
 # Steam Hosts Start
-104.81.169.48		steam-chat.com
-23.13.152.183		steamcommunity.com
-104.81.169.48		www.steamcommunity.com
-23.13.152.183		api.steampowered.com
-23.13.152.183		help.steampowered.com
-23.35.29.201		store.steampowered.com
-23.205.104.51		media.steampowered.com
-23.13.152.183		login.steampowered.com
-23.48.9.171		checkout.steampowered.com
-146.75.31.52		community.steamstatic.com
-2600:1408:a:22::212:434c		avatars.akamai.steamstatic.com
-104.96.221.56		avatars.akamai.steamstatic.com
-104.96.221.66		cdn.akamai.steamstatic.com
-2.18.67.91		community.akamai.steamstatic.com
-104.96.221.75		store.akamai.steamstatic.com
-23.199.55.31		steamcdn-a.akamaihd.net
+23.56.229.74		steam-chat.com
+184.24.57.225		steamcommunity.com
+23.56.229.74		www.steamcommunity.com
+184.24.57.225		api.steampowered.com
+184.24.57.225		help.steampowered.com
+23.60.175.219		store.steampowered.com
+184.25.255.170		media.steampowered.com
+184.24.57.225		login.steampowered.com
+23.60.175.219		checkout.steampowered.com
+151.101.163.52		community.steamstatic.com
+2600:1405:7400:29::17d3:7ca9		avatars.akamai.steamstatic.com
+184.25.255.181		avatars.akamai.steamstatic.com
+184.25.255.170		cdn.akamai.steamstatic.com
+184.25.255.176		community.akamai.steamstatic.com
+184.25.255.166		store.akamai.steamstatic.com
+23.55.178.176		steamcdn-a.akamaihd.net
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_steam
 # Star me: https://github.com/collegeming/host
 # Steam Hosts End
 
 # TMDB Hosts Start
-2600:9000:28a0:d600:e:5373:440:93a1		www.themoviedb.org
-3.171.38.90		www.themoviedb.org
-2600:9000:286d:aa00:c:174a:c400:93a1		api.themoviedb.org
-3.170.19.94		api.themoviedb.org
-2400:52e0:1a00::845:1		image.tmdb.org
-185.93.1.244		image.tmdb.org
-2600:9000:286d:aa00:10:fb02:4000:93a1		api.tmdb.org
-3.170.19.97		api.tmdb.org
+2600:9000:2027:c000:e:5373:440:93a1		www.themoviedb.org
+52.222.205.11		www.themoviedb.org
+2600:9000:2464:6600:c:174a:c400:93a1		api.themoviedb.org
+18.161.156.25		api.themoviedb.org
+2400:52e0:1a00::1236:1		image.tmdb.org
+169.150.236.97		image.tmdb.org
+2600:9000:2464:d200:10:fb02:4000:93a1		api.tmdb.org
+18.161.156.93		api.tmdb.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_tmdb
 # Star me: https://github.com/collegeming/host
 # TMDB Hosts End
 
 # Google_Translate Hosts Start
-2607:f8b0:4004:c1f::5f		translate.googleapis.com
-192.178.155.95		translate.googleapis.com
-2607:f8b0:4004:c1d::71		translate.google.com
-172.253.63.102		translate.google.com
+2607:f8b0:4023:80b::5f		translate.googleapis.com
+142.251.121.95		translate.googleapis.com
+2607:f8b0:4023:80d::8a		translate.google.com
+142.251.121.138		translate.google.com
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_google_translate
 # Star me: https://github.com/collegeming/host
 # Google_Translate Hosts End
 
 # wallhaven Hosts Start
-2606:4700:20::681a:a23		wallhaven.cc
-104.26.11.35		wallhaven.cc
+2606:4700:20::681a:b23		wallhaven.cc
+172.67.74.111		wallhaven.cc
 2606:4700:20::ac43:4a6f		th.wallhaven.cc
-172.67.74.111		th.wallhaven.cc
+104.26.11.35		th.wallhaven.cc
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_wallhaven
 # Star me: https://github.com/collegeming/host
 # wallhaven Hosts End
 
 # 529065 Hosts Start
-2606:4700:3033::6815:59c7		529065.xyz
+2606:4700:3037::ac43:a494		529065.xyz
 172.67.164.148		529065.xyz
-2606:4700:3030::6815:5c67		529066.xyz
-172.67.191.141		529066.xyz
+2606:4700:3033::ac43:bf8d		529066.xyz
+104.21.92.103		529066.xyz
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_529065
 # Star me: https://github.com/collegeming/host
 # 529065 Hosts End
@@ -124,7 +124,7 @@
 # acgrip Hosts Start
 194.127.164.6		acg.rip
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_acgrip
 # Star me: https://github.com/collegeming/host
 # acgrip Hosts End
@@ -133,16 +133,16 @@
 2605:6400:30:f127::a7		animetosho.org
 107.189.29.30		animetosho.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_animetosho
 # Star me: https://github.com/collegeming/host
 # animetosho Hosts End
 
 # anirena Hosts Start
-2606:4700:3033::ac43:c93e		anirena.com
-104.21.76.212		anirena.com
+2606:4700:3030::6815:4cd4		anirena.com
+172.67.201.62		anirena.com
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_anirena
 # Star me: https://github.com/collegeming/host
 # anirena Hosts End
@@ -150,29 +150,29 @@
 # asnet Hosts Start
 2001:470:1f1d:2e7::ffff		asnet.pw
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_asnet
 # Star me: https://github.com/collegeming/host
 # asnet Hosts End
 
 # bangumi Hosts Start
-2606:4700:130:436c:6f75:6466:6c61:7265		bitsearch.to
+2606:4700:3037::6815:3475		bitsearch.to
 104.21.52.117		bitsearch.to
 2001:67c:2354:2::22		solidtorrents.to
 95.215.19.22		solidtorrents.to
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_bangumi
 # Star me: https://github.com/collegeming/host
 # bangumi Hosts End
 
 # dmhy Hosts Start
-2606:4700:20::ac43:620f		share.dmhy.org
-104.25.61.106		share.dmhy.org
-2606:4700:20::ac43:620f		dmhy.org
+2606:4700:20::6819:3d6a		share.dmhy.org
+104.25.62.106		share.dmhy.org
+2606:4700:20::6819:3d6a		dmhy.org
 172.67.98.15		dmhy.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_dmhy
 # Star me: https://github.com/collegeming/host
 # dmhy Hosts End
@@ -180,45 +180,45 @@
 # yts Hosts Start
 # 未找到 yts.mx 的有效IP地址
 2606:4700:3033::ac43:c117		yts.unblockninja.com
-104.21.60.66		yts.unblockninja.com
+172.67.193.23		yts.unblockninja.com
 2606:4700:3035::6815:5187		yts.ninjaproxy1.com
-172.67.189.155		yts.ninjaproxy1.com
+104.21.81.135		yts.ninjaproxy1.com
 2606:4700:3034::6815:4327		yts.proxyninja.org
-104.21.67.39		yts.proxyninja.org
+172.67.211.246		yts.proxyninja.org
 2606:4700:3031::ac43:9283		yts.proxyninja.net
 172.67.146.131		yts.proxyninja.net
 2606:4700:3036::6815:2e2d		yts.torrentbay.st
-104.21.46.45		yts.torrentbay.st
-2606:4700:3035::ac43:82c3		yts.torrentsbay.org
+172.67.223.159		yts.torrentbay.st
+2606:4700:3031::6815:8dd		yts.torrentsbay.org
 172.67.130.195		yts.torrentsbay.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_yts
 # Star me: https://github.com/collegeming/host
 # yts Hosts End
 
 # uindex Hosts Start
 2606:4700:3035::6815:4d7		uindex.org
-172.67.132.131		uindex.org
+104.21.4.215		uindex.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_uindex
 # Star me: https://github.com/collegeming/host
 # uindex Hosts End
 
 # u3c3 Hosts Start
-2606:4700:3030::ac43:a04e		u3c3.com
+2606:4700:3031::6815:ec6		u3c3.com
 172.67.160.78		u3c3.com
-2606:4700:3030::ac43:b04d		u001.25img.com
-172.67.176.77		u001.25img.com
+2606:4700:3035::6815:5863		u001.25img.com
+104.21.88.99		u001.25img.com
 2606:4700:3030::ac43:b04d		u002.25img.com
-172.67.176.77		u002.25img.com
+104.21.88.99		u002.25img.com
 2606:4700:3035::6815:5863		u003.25img.com
 172.67.176.77		u003.25img.com
-2606:4700:3036::ac43:cd82		m0m0m1m.mnmnmnmnmn.com
-172.67.205.130		m0m0m1m.mnmnmnmnmn.com
+2606:4700:3032::6815:169e		m0m0m1m.mnmnmnmnmn.com
+104.21.22.158		m0m0m1m.mnmnmnmnmn.com
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_u3c3
 # Star me: https://github.com/collegeming/host
 # u3c3 Hosts End
@@ -231,7 +231,7 @@
 2606:4700:3037::6815:17f		torrentgalaxy.space
 104.21.1.127		torrentgalaxy.space
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_torrentgalaxy
 # Star me: https://github.com/collegeming/host
 # torrentgalaxy Hosts End
@@ -240,94 +240,94 @@
 2606:4700:3032::6815:1b67		torrentdownload.info
 104.21.27.103		torrentdownload.info
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_torrentdownload
 # Star me: https://github.com/collegeming/host
 # torrentdownload Hosts End
 
 # torrentcore Hosts Start
-2606:4700:3036::6815:2310		torrentcore.xyz
-104.21.35.16		torrentcore.xyz
+2606:4700:3035::ac43:a7b2		torrentcore.xyz
+172.67.167.178		torrentcore.xyz
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_torrentcore
 # Star me: https://github.com/collegeming/host
 # torrentcore Hosts End
 
 # torrentdownloads Hosts Start
-2606:4700:20::681a:c86		torrentdownloads.pro
+2606:4700:20::681a:d86		torrentdownloads.pro
 104.26.13.134		torrentdownloads.pro
-2606:4700:3033::ac43:c117		torrentdownloads.unblockninja.com
-172.67.193.23		torrentdownloads.unblockninja.com
-2606:4700:3031::ac43:bd9b		torrentdownloads.ninjaproxy1.com
-104.21.81.135		torrentdownloads.ninjaproxy1.com
-2606:4700:3034::6815:4327		torrentdownloads.proxyninja.org
-104.21.67.39		torrentdownloads.proxyninja.org
-2606:4700:3031::ac43:9283		torrentdownloads.proxyninja.net
-104.21.41.103		torrentdownloads.proxyninja.net
+2606:4700:3033::6815:3c42		torrentdownloads.unblockninja.com
+104.21.60.66		torrentdownloads.unblockninja.com
+2606:4700:3035::6815:5187		torrentdownloads.ninjaproxy1.com
+172.67.189.155		torrentdownloads.ninjaproxy1.com
+2606:4700:3034::ac43:d3f6		torrentdownloads.proxyninja.org
+172.67.211.246		torrentdownloads.proxyninja.org
+2606:4700:3035::6815:2967		torrentdownloads.proxyninja.net
+172.67.146.131		torrentdownloads.proxyninja.net
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_torrentdownloads
 # Star me: https://github.com/collegeming/host
 # torrentdownloads Hosts End
 
 # tokyotosho Hosts Start
 2606:4700:3037::ac43:d601		tokyotosho.info
-104.21.93.187		tokyotosho.info
+172.67.214.1		tokyotosho.info
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_tokyotosho
 # Star me: https://github.com/collegeming/host
 # tokyotosho Hosts End
 
 # therarbg Hosts Start
-2606:4700:3036::6815:25d5		therarbg.to
-104.21.37.213		therarbg.to
-2606:4700:3033::ac43:b904		therarbg.com
-172.67.185.4		therarbg.com
+2606:4700:3032::ac43:d577		therarbg.to
+172.67.213.119		therarbg.to
+2606:4700:3033::6815:5893		therarbg.com
+104.21.88.147		therarbg.com
 2606:4700:3031::ac43:a4a2		therar.site
-172.67.164.162		therar.site
-2606:4700:3033::6815:3c42		rarbg.unblockninja.com
+104.21.74.237		therar.site
+2606:4700:3033::ac43:c117		rarbg.unblockninja.com
 104.21.60.66		rarbg.unblockninja.com
-2606:4700:3035::6815:5187		rarbg.ninjaproxy1.com
+2606:4700:3031::ac43:bd9b		rarbg.ninjaproxy1.com
 104.21.81.135		rarbg.ninjaproxy1.com
 2606:4700:3034::6815:4327		rarbg.proxyninja.org
-104.21.67.39		rarbg.proxyninja.org
+172.67.211.246		rarbg.proxyninja.org
 2606:4700:3035::6815:2967		rarbg.proxyninja.net
-104.21.41.103		rarbg.proxyninja.net
+172.67.146.131		rarbg.proxyninja.net
 2606:4700:3036::6815:2e2d		rarbg.torrentbay.st
-172.67.223.159		rarbg.torrentbay.st
-2606:4700:3031::6815:8dd		rarbg.torrentsbay.org
-172.67.130.195		rarbg.torrentsbay.org
+104.21.46.45		rarbg.torrentbay.st
+2606:4700:3035::ac43:82c3		rarbg.torrentsbay.org
+104.21.8.221		rarbg.torrentsbay.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_therarbg
 # Star me: https://github.com/collegeming/host
 # therarbg Hosts End
 
 # subsplease Hosts Start
 2606:4700:3030::ac43:abd5		subsplease.org
-104.21.39.234		subsplease.org
+172.67.171.213		subsplease.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_subsplease
 # Star me: https://github.com/collegeming/host
 # subsplease Hosts End
 
 # showrss Hosts Start
 2606:4700:3032::6815:361		showrss.info
-104.21.3.97		showrss.info
+172.67.153.125		showrss.info
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_showrss
 # Star me: https://github.com/collegeming/host
 # showrss Hosts End
 
 # shanaproject Hosts Start
 2606:4700:3034::6815:307e		shanaproject.com
-172.67.151.152		shanaproject.com
+104.21.48.126		shanaproject.com
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_shanaproject
 # Star me: https://github.com/collegeming/host
 # shanaproject Hosts End
@@ -335,13 +335,13 @@
 # nyaa Hosts Start
 186.2.163.20		nyaa.si
 2606:4700:3035::ac43:9ee8		nyaa.iss.ink
-104.21.89.116		nyaa.iss.ink
-2606:4700:3036::ac43:a172		nyaa.land
-104.21.82.183		nyaa.land
-2606:4700:3033::6815:3c42		nyaa.unblockninja.com
-172.67.193.23		nyaa.unblockninja.com
+172.67.158.232		nyaa.iss.ink
+2606:4700:3037::6815:52b7		nyaa.land
+172.67.161.114		nyaa.land
+2606:4700:3033::ac43:c117		nyaa.unblockninja.com
+104.21.60.66		nyaa.unblockninja.com
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_nyaa
 # Star me: https://github.com/collegeming/host
 # nyaa Hosts End
@@ -350,26 +350,26 @@
 2606:4700:3034::6815:1145		mikanani.me
 172.67.223.55		mikanani.me
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_mikanani
 # Star me: https://github.com/collegeming/host
 # mikanani Hosts End
 
 # magnetcatcat Hosts Start
 2606:4700:3030::6815:9d5		magnetcatcat.com
-172.67.161.85		magnetcatcat.com
-2606:4700:3032::ac43:86e2		clmclm.com
+104.21.9.213		magnetcatcat.com
+2606:4700:3033::6815:19ea		clmclm.com
 172.67.134.226		clmclm.com
-2606:4700:3032::6815:20ac		www.8800492.xyz
-104.21.32.172		www.8800492.xyz
-2606:4700:3036::6815:518f		www.8800493.xyz
+2606:4700:3032::ac43:9927		www.8800492.xyz
+172.67.153.39		www.8800492.xyz
+2606:4700:3032::ac43:a176		www.8800493.xyz
 104.21.81.143		www.8800493.xyz
 2606:4700:3035::ac43:8603		www.8800494.xyz
 104.21.25.104		www.8800494.xyz
-2606:4700:3035::ac43:8d95		www.8800490.xyz
-104.21.46.196		www.8800490.xyz
+2606:4700:3032::6815:2ec4		www.8800490.xyz
+172.67.141.149		www.8800490.xyz
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_magnetcatcat
 # Star me: https://github.com/collegeming/host
 # magnetcatcat Hosts End
@@ -377,8 +377,8 @@
 # kickass Hosts Start
 2606:4700:3037::6815:5d31		kickass.ws
 104.21.93.49		kickass.ws
-2606:4700:3034::6815:5d16		kickasstorrents.bz
-172.67.203.4		kickasstorrents.bz
+2606:4700:3037::ac43:cb04		kickasstorrents.bz
+104.21.93.22		kickasstorrents.bz
 2606:4700:3035::ac43:cecd		kkickass.com
 104.21.50.141		kkickass.com
 2606:4700:3033::ac43:aa46		kkat.net
@@ -386,34 +386,34 @@
 2606:4700:3034::6815:3a7b		kick4ss.com
 104.21.58.123		kick4ss.com
 2606:4700:3036::ac43:b5ab		kickasst.net
-104.21.72.107		kickasst.net
+172.67.181.171		kickasst.net
 2606:4700:3031::6815:31a7		kickasstorrents.id
 172.67.164.251		kickasstorrents.id
-2606:4700:3035::ac43:a4ec		thekat.cc
+2606:4700:3031::6815:39a7		thekat.cc
 172.67.164.236		thekat.cc
-2606:4700:3031::6815:643		kickasshydra.dev
+2606:4700:3033::ac43:8692		kickasshydra.dev
 104.21.6.67		kickasshydra.dev
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_kickass
 # Star me: https://github.com/collegeming/host
 # kickass Hosts End
 
 # kickass.torrentbay Hosts Start
 2606:4700:3037::ac43:df9f		kickass.torrentbay.st
-172.67.223.159		kickass.torrentbay.st
+104.21.46.45		kickass.torrentbay.st
 2606:4700:3031::6815:8dd		kickass.torrentsbay.org
-172.67.130.195		kickass.torrentsbay.org
-2606:4700:3033::6815:3c42		kickasstorrents.unblockninja.com
-104.21.60.66		kickasstorrents.unblockninja.com
+104.21.8.221		kickass.torrentsbay.org
+2606:4700:3033::ac43:c117		kickasstorrents.unblockninja.com
+172.67.193.23		kickasstorrents.unblockninja.com
 2606:4700:3035::6815:5187		kickasstorrents.ninjaproxy1.com
-172.64.80.1		kickasstorrents.ninjaproxy1.com
-2606:4700:3034::ac43:d3f6		kickasstorrents.proxyninja.org
-104.21.67.39		kickasstorrents.proxyninja.org
-2606:4700:130:436c:6f75:6466:6c61:7265		kickasstorrents.proxyninja.net
-104.21.41.103		kickasstorrents.proxyninja.net
+104.21.81.135		kickasstorrents.ninjaproxy1.com
+2606:4700:3034::6815:4327		kickasstorrents.proxyninja.org
+172.67.211.246		kickasstorrents.proxyninja.org
+2606:4700:3031::ac43:9283		kickasstorrents.proxyninja.net
+172.67.146.131		kickasstorrents.proxyninja.net
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_kickass.torrentbay
 # Star me: https://github.com/collegeming/host
 # kickass.torrentbay Hosts End
@@ -421,7 +421,7 @@
 # isohunt Hosts Start
 # 未找到 isohunt.ch 的有效IP地址
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_isohunt
 # Star me: https://github.com/collegeming/host
 # isohunt Hosts End
@@ -429,39 +429,39 @@
 # archive Hosts Start
 207.241.224.2		archive.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_archive
 # Star me: https://github.com/collegeming/host
 # archive Hosts End
 
 # eztvx Hosts Start
 2606:4700:3031::ac43:c296		eztvx.to
-104.21.68.109		eztvx.to
+172.67.194.150		eztvx.to
 2606:4700:3032::6815:3210		eztv.wf
-172.67.199.60		eztv.wf
+104.21.50.16		eztv.wf
 2606:4700:3033::6815:251e		eztv.tf
-172.67.203.108		eztv.tf
-2606:4700:3035::ac43:b227		eztv.yt
+104.21.37.30		eztv.tf
+2606:4700:3035::6815:2b6d		eztv.yt
 172.67.178.39		eztv.yt
 2606:4700:3033::ac43:867b		eztv1.xyz
-172.64.80.1		eztv1.xyz
+104.21.25.189		eztv1.xyz
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_eztvx
 # Star me: https://github.com/collegeming/host
 # eztvx Hosts End
 
 # extratorrent Hosts Start
 2606:4700:3037::ac43:c508		extratorrent.st
-104.21.21.76		extratorrent.st
+172.67.197.8		extratorrent.st
 2606:4700:3031::ac43:bd9b		extratorrent.ninjaproxy1.com
-104.21.81.135		extratorrent.ninjaproxy1.com
-2606:4700:3034::6815:4327		extratorrent.proxyninja.org
+172.67.189.155		extratorrent.ninjaproxy1.com
+2606:4700:3034::ac43:d3f6		extratorrent.proxyninja.org
 172.67.211.246		extratorrent.proxyninja.org
-2606:4700:130:436c:6f75:6466:6c61:7265		extratorrent.proxyninja.net
-172.67.146.131		extratorrent.proxyninja.net
+2606:4700:3031::ac43:9283		extratorrent.proxyninja.net
+104.21.41.103		extratorrent.proxyninja.net
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_extratorrent
 # Star me: https://github.com/collegeming/host
 # extratorrent Hosts End
@@ -469,12 +469,12 @@
 # ext Hosts Start
 2606:4700:3037::6815:520f		ext.to
 172.67.193.81		ext.to
-2606:4700:3036::ac43:a06e		search.extto.com
+2606:4700:3032::6815:3153		search.extto.com
 172.67.160.110		search.extto.com
 2606:4700:3036::6815:2e2d		extranet.torrentbay.st
 172.67.223.159		extranet.torrentbay.st
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_ext
 # Star me: https://github.com/collegeming/host
 # ext Hosts End
@@ -482,7 +482,7 @@
 # e-hentai Hosts Start
 172.66.140.62		e-hentai.org
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_e-hentai
 # Star me: https://github.com/collegeming/host
 # e-hentai Hosts End
@@ -490,64 +490,64 @@
 # imbt Hosts Start
 # 未找到 imbt.one 的有效IP地址
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_imbt
 # Star me: https://github.com/collegeming/host
 # imbt Hosts End
 
 # thepiratebay Hosts Start
-2606:4700:7::a29f:8806		thepiratebay.org
+2606:4700:7::a29f:8906		thepiratebay.org
 162.159.137.6		thepiratebay.org
 2606:4700:3033::ac43:c117		thepiratebay.unblockninja.com
-172.67.193.23		thepiratebay.unblockninja.com
-2606:4700:3035::6815:5187		thepiratebay.ninjaproxy1.com
+104.21.60.66		thepiratebay.unblockninja.com
+2606:4700:3031::ac43:bd9b		thepiratebay.ninjaproxy1.com
 104.21.81.135		thepiratebay.ninjaproxy1.com
 2606:4700:3034::ac43:d3f6		tpb.proxyninja.org
-172.67.211.246		tpb.proxyninja.org
-2606:4700:3035::6815:2967		thepiratebay.proxyninja.net
-172.64.80.1		thepiratebay.proxyninja.net
-2606:4700:3037::ac43:df9f		thepiratebay.torrentbay.st
+104.21.67.39		tpb.proxyninja.org
+2606:4700:3031::ac43:9283		thepiratebay.proxyninja.net
+104.21.41.103		thepiratebay.proxyninja.net
+2606:4700:3036::6815:2e2d		thepiratebay.torrentbay.st
 104.21.46.45		thepiratebay.torrentbay.st
 # 未找到 tpb.skynetcloud.site 的有效IP地址
-64.120.31.121		piratehaven.xyz
+208.115.249.234		piratehaven.xyz
 # 未找到 mirrorbay.top 的有效IP地址
-2606:4700:3037::6815:307a		thepiratebay0.org
-104.21.48.122		thepiratebay0.org
-2606:4700:3033::6815:487d		thepiratebay10.xyz
-104.21.72.125		thepiratebay10.xyz
-2606:4700:3037::ac43:896d		pirateproxylive.org
+2606:4700:3031::ac43:973b		thepiratebay0.org
+172.67.151.59		thepiratebay0.org
+2606:4700:3035::ac43:b8a1		thepiratebay10.xyz
+172.67.184.161		thepiratebay10.xyz
+2606:4700:3031::6815:56e4		pirateproxylive.org
 172.67.137.109		pirateproxylive.org
-2606:4700:3034::6815:2ba3		thehiddenbay.com
-104.21.43.163		thehiddenbay.com
+2606:4700:3034::ac43:b571		thehiddenbay.com
+172.67.181.113		thehiddenbay.com
 2606:4700:3035::6815:5ec7		thepiratebay.zone
-172.67.168.166		thepiratebay.zone
-2606:4700:3034::ac43:9a96		tpb.party
+104.21.94.199		thepiratebay.zone
+2606:4700:3035::6815:618		tpb.party
 104.21.6.24		tpb.party
-2606:4700:3030::ac43:d236		piratebayproxy.live
-104.21.83.7		piratebayproxy.live
-2606:4700:3037::6815:4289		piratebay.live
+2606:4700:3030::6815:5307		piratebayproxy.live
+172.67.210.54		piratebayproxy.live
+2606:4700:3032::ac43:a067		piratebay.live
 172.67.160.103		piratebay.live
-2606:4700:3033::ac43:a007		piratebay.party
+2606:4700:3033::6815:ea0		piratebay.party
 104.21.14.160		piratebay.party
-2606:4700:3031::ac43:8942		thepiratebay.party
-104.21.86.223		thepiratebay.party
+2606:4700:3033::6815:56df		thepiratebay.party
+172.67.137.66		thepiratebay.party
 2606:4700:3030::ac43:b768		thepiratebaye.org
-172.67.183.104		thepiratebaye.org
-2606:4700:3037::6815:474		thepiratebay.cloud
-172.64.80.1		thepiratebay.cloud
-2606:4700:3031::6815:387d		tpb-proxy.xyz
-172.67.151.43		tpb-proxy.xyz
-2606:4700:3035::6815:4fed		tpb.re
-104.21.79.237		tpb.re
-2606:4700:3033::ac43:bf01		tpirbay.site
-104.21.20.29		tpirbay.site
+104.21.18.220		thepiratebaye.org
+2606:4700:3033::ac43:8409		thepiratebay.cloud
+104.21.4.116		thepiratebay.cloud
+2606:4700:3036::ac43:972b		tpb-proxy.xyz
+104.21.56.125		tpb-proxy.xyz
+2606:4700:3036::ac43:ac01		tpb.re
+172.67.172.1		tpb.re
+2606:4700:3034::6815:141d		tpirbay.site
+172.67.191.1		tpirbay.site
 # 未找到 tpirbay.top 的有效IP地址
-212.92.104.8		tpirbay.xyz
+192.157.56.141		tpirbay.xyz
 
-# Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts_thepiratebay
 # Star me: https://github.com/collegeming/host
 # thepiratebay Hosts End
 
-# Total Update Time: 2026-01-31 00:36:55 (UTC+8)
+# Total Update Time: 2026-02-01 00:25:18 (UTC+8)
 # Update URL: https://raw.githubusercontent.com/collegeming/host/main/hosts
